@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Weather</title>
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
-    <form id="weather-form">
-        <input type="search" id="search" placeholder="Search for your location">
-        <button type="submit">Search</button>
-    </form>
+    <header>
+        <form id="weather-form">
+            <input type="search" id="search" placeholder="Search for your location">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <div id="container">
+            <div>
+                <h2 id="outside-condition"></h2>
+                <h2 id="region"></h2>
+                
+                <div class="flex">
+                    <p id="temp">Temperature: </p>
+                    <div id="line"></div>
+                    <div>
+                        <p id="feels-like">Feels Like: </p>
+                        <p id="humidity">Humidity: </p>
+                        <p id="wind-mph">Wind(mph): </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
