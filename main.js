@@ -1,0 +1,1 @@
+document.querySelector("#weather-form").addEventListener("submit",(e=>{e.preventDefault(),async function(e){const t=await fetch("https://api.weatherapi.com/v1/forecast.json?key=9526e5c471524e3498d02146230907&q="+e+"&days=3"),a=await t.json();console.log(a)}(document.querySelector("#search").value)}));
